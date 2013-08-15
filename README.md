@@ -1,4 +1,3 @@
-cv
+Curriculum Vitae and Cover Letter
 ==
 
-Curriculum Vitae

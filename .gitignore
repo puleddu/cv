@@ -1,5 +1,5 @@
-cv_antoniopiu.aux
-cv_antoniopiu.log
-cv_antoniopiu.out
-cv_antoniopiu.pdf
-cv_antoniopiu.synctex.gz
+*.aux
+*.log
+*.out
+*.pdf
+*.gz
