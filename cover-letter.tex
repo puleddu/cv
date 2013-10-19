@@ -20,9 +20,12 @@
  
 }
 
+\pagestyle{empty}
+
+
 % Margins
 \usepackage{geometry} 
-\geometry{a4paper, textwidth=4.5in, textheight=9.3in, marginparsep=20pt, marginparwidth=2in}
+\geometry{a4paper, textwidth=4.8in, textheight=9.5in, marginparsep=20pt, marginparwidth=2in}
 \renewcommand\footnotelayout{\fontsize{10}{-50}\selectfont}
 % \urlstyle{same}
 
@@ -54,32 +57,48 @@
    \par}
 \makeatother
 
+\makeatletter
+\renewcommand*{\opening}[1]{%
+%  \ifx\@empty\fromaddress
+%    \thispagestyle{firstpage}%
+%      {\raggedleft\@date\par}%
+%  \else  % home address
+%    \thispagestyle{empty}%
+%    {\raggedleft\begin{tabular}{l@{}}\ignorespaces
+%      \fromaddress \\*[2\parskip]%
+%      \@date \end{tabular}\par}%
+%  \fi
+%  \vspace{2\parskip}%
+%  {\raggedright \toname \\ \toaddress \par}%
+  \begin{minipage}[t]{0.5\textwidth}%
+    \toname \\ 
+    \toaddress
+  \end{minipage}\hfill\@date\par
+  \vspace{1.5\parskip}%
+  #1\par\nobreak}
+\makeatother
+
 %----------------------------------------------------------------------------------------
 %	LETTER CONTENT SECTION
 %----------------------------------------------------------------------------------------
 
-\opening{Dear FlixBus Responsible,\\}
+\opening{Dear Mr. Fabian Wunderlich,\\}
 
-I am writing for the position of \textbf{Web Designer},
-found in the website Gründerluft\footnote{\url{http://www.gruenderluft.de/ads/web-designer-m-w}}.
-I believe my knowledge and experience is appropriate for this position, and I would like to apply.
+I am writing for the position of \textbf{Senior Product/Web Designer}, found in the website \emph{http://berlinstartupjobs.com/}. I believe my knowledge and experience is appropriate for this position, and I would like to apply.
 
-I am from Italy, but I plan to relocate to Germany as soon as possible.
-I left my position at Net7 in April 2012, and began working as a \emph{Freelance designer}, working mainly on client projects.
+I am from Italy. I would be willing to move to Germany and start working as soon as required. 
 
-I am passionate about design and I feel confortable managing every aspect of the projects I work on. 
-All the works listed on my porfolio\footnote{\url{http://antoniopiu.com}} have been selected from my freelance experience only and are relative to the \emph{2012-2013} period.
+I left my last position at Net7 in April 2012, and began working as a Freelance designer.
+The work showcased on my portfolio\footnote{\url{http://antoniopiu.com}} is the track record of the \emph{2012-2013} activity and the projects have been selected from my freelance experience only, so it is possible to easily evaluate the quality and the variety of the design.
 
-I have eight years of experience designing websites. I always aim to design simple, yet solid, layouts with a strong focus on accessibility.
+Recently I worked as a Web Designer for Turini Group\footnote{\url{http://turinigroup.com/en}}, a well-known italian Law firm, to renew their corporate website network and redesign two of their online services: \emph{Patent Office}\footnote{\url{http://antoniopiu.com/works/ufficiobrevetti}} (focusing the efforts on mobile interface usability) and Brevettinews\footnote{\url{http://antoniopiu.com/works/brevettinews}} (which has been a readability and marketing challenge as I renewed the entire online presence—including the magazine logo and the newsletter design). 
 
-I also maintain small personal projects, whose aim is to learn new things, mainly about front-end development.
+I have over eight years of experience as a web designer. I use to code the designs I make, using \textsc{html/css/sass}. I also use Git. I am recently learning more about \textsc{ux} and interaction design. I love photography and typography and I think my multidisciplinary experience can be a good contribution for this project.
 
-I learned German for five years during my high school classes, so I have a more than basic knowledge of the language. Still, I can't say I am proficient speaking german at work as time passed since my intensive language camp in Germany.
+I had been learning German for five years during high school. Still, I can not say I am not professionally proficient speaking German yet as time passed since my intensive language camp in Germany. Anyway I'd like to take courses as soon as I relocate. I also speak fluent Spanish, basic French.
 
-Anyway I'd like to take courses as soon as I relocate, as it is a priority for me to learn the official language and to speak it regularly.
-
-If you are interested, please get in touch. I am also available
-for a call or chat in Skype: my username is \emph{puleddu}.
+If you find my profile interesting, please get in touch. I am also available
+for a call on Skype: my username is \emph{puleddu}.
 
 Thank you very much for taking the time to consider my credentials.
 
